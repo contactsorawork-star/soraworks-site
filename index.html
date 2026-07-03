@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -5,12 +6,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Soraworks — Sites web pour artisans, par Adam Watanabe</title>
-<meta name="description" content="Soraworks crée des sites web simples, rapides et efficaces pour les artisans : plombiers, électriciens, couvreurs, jardiniers. Devis clair, mise en ligne rapide.">
+<meta name="description" content="Soraworks crée des sites web rapides et efficaces pour les artisans : plombiers, électriciens, couvreurs, jardiniers. Devis clair, mise en ligne rapide.">
 <link rel="icon" href="images/favicon.ico">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="css/style.css">
 </head>
@@ -43,20 +44,34 @@
 <main>
 
   <!-- ========================================================
-       HERO
+       HERO — signature : aura dégradée "ciel" (indigo/corail/cyan)
        ======================================================== -->
   <section class="hero" id="accueil">
+    <div class="hero-aura" aria-hidden="true"></div>
     <div class="container hero-inner">
-      <p class="eyebrow">Studio web indépendant</p>
-      <h1>Des sites web clairs pour des métiers qui n'ont pas de temps à perdre.</h1>
-      <p class="hero-lead">Je conçois et mets en ligne le site de votre entreprise — plomberie, électricité, couverture, jardinage — pour que vos clients vous trouvent et vous appellent. Sans jargon, sans mauvaise surprise sur le prix.</p>
-      <div class="hero-actions">
-        <a href="#contact" class="btn btn-primary">Demander un devis gratuit</a>
-        <a href="#process" class="btn btn-secondary">Voir comment ça marche</a>
+      <div class="hero-copy">
+        <p class="eyebrow">Studio web indépendant</p>
+        <h1>Votre entreprise mérite un site qui donne envie d'appeler.</h1>
+        <p class="hero-lead">Plombier, électricien, couvreur, jardinier : je conçois et mets en ligne le site de votre activité. Rapide, clair, sans jargon — et sans mauvaise surprise sur le prix.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">Demander un devis gratuit</a>
+          <a href="#process" class="btn btn-secondary">Voir comment ça marche</a>
+        </div>
       </div>
-    </div>
-    <div class="hero-horizon" aria-hidden="true">
-      <span class="horizon-circle"></span>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="orbit-card orbit-card--1">
+          <span class="orbit-label">Temps de chargement</span>
+          <span class="orbit-value">&lt;1s<small>sur mobile</small></span>
+        </div>
+        <div class="orbit-card orbit-card--2">
+          <span class="orbit-label">Mise en ligne</span>
+          <span class="orbit-value">72h<small>chrono</small></span>
+        </div>
+        <div class="orbit-card orbit-card--3">
+          <span class="orbit-label">Abonnement</span>
+          <span class="orbit-value">19€<small>par mois</small></span>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -66,23 +81,27 @@
   <section class="services" id="services">
     <div class="container">
       <p class="section-eyebrow">Ce que je fais</p>
-      <h2>Un site pensé pour un artisan, pas pour une agence de com'</h2>
+      <h2>Un site simple et efficace, sans superflu</h2>
       <p class="section-lead">Pas de fonctionnalités inutiles, pas de mise à jour permanente à gérer. Juste un site rapide, clair, qui donne envie d'appeler.</p>
 
       <div class="service-grid">
         <article class="service-card">
+          <span class="service-glyph" aria-hidden="true">01</span>
           <h3>Site vitrine sur-mesure</h3>
           <p>Accueil, services, avis clients, zone d'intervention, contact — l'essentiel pour être trouvé et contacté.</p>
         </article>
         <article class="service-card">
+          <span class="service-glyph" aria-hidden="true">02</span>
           <h3>Nom de domaine &amp; mise en ligne</h3>
           <p>Je vous accompagne pour l'achat de votre nom de domaine — vous en restez propriétaire — et je mets le site en ligne.</p>
         </article>
         <article class="service-card">
+          <span class="service-glyph" aria-hidden="true">03</span>
           <h3>Référencement local (SEO)</h3>
           <p>Structure du site pensée pour Google : votre ville, votre métier, votre fiche Google Business Profile.</p>
         </article>
         <article class="service-card">
+          <span class="service-glyph" aria-hidden="true">04</span>
           <h3>Maintenance &amp; petites modifs</h3>
           <p>Vos horaires changent, un nouveau tarif, une photo à ajouter : je m'en occupe dans le cadre de l'abonnement.</p>
         </article>
@@ -130,7 +149,7 @@
       <div class="offer-grid">
         <div class="offer-card">
           <h3>Création du site</h3>
-          <p class="offer-price">À partir de <strong>300&nbsp;€</strong><span>paiement unique</span></p>
+          <p class="offer-price"><strong>300&nbsp;€</strong><span>à partir de, paiement unique</span></p>
           <ul class="offer-list">
             <li>Site sur-mesure, jusqu'à 6 sections</li>
             <li>Formulaire de contact</li>
@@ -139,8 +158,9 @@
           </ul>
         </div>
         <div class="offer-card offer-card--accent">
+          <span class="offer-badge">Revenu récurrent inclus</span>
           <h3>Abonnement hébergement &amp; suivi</h3>
-          <p class="offer-price">À partir de <strong>19&nbsp;€</strong><span>par mois</span></p>
+          <p class="offer-price"><strong>19&nbsp;€</strong><span>à partir de, par mois</span></p>
           <ul class="offer-list">
             <li>Hébergement &amp; nom de domaine gérés</li>
             <li>2 modifications mineures par mois</li>
@@ -182,7 +202,7 @@
         <p>Décrivez votre activité en quelques mots, je reviens vers vous rapidement avec un premier avis et un devis indicatif.</p>
         <p class="contact-email">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 6l-10 7L2 6"/><path d="M2 6h20v12H2z"/></svg>
-          <a href="mailto:contact.soraworks@gmail.com">contact.soraworks@gmail.com</a>
+          <a href="mailto:contact.sorawork@gmail.com">contact.sorawork@gmail.com</a>
         </p>
       </div>
 
@@ -214,7 +234,7 @@
 <footer class="site-footer">
   <div class="container footer-inner">
     <p>&copy; <span id="year"></span> Soraworks — Adam Watanabe.</p>
-    <p><a href="mailto:contact.soraworks@gmail.com">contact.soraworks@gmail.com</a></p>
+    <p><a href="mailto:contact.sorawork@gmail.com">contact.sorawork@gmail.com</a></p>
   </div>
 </footer>
 
